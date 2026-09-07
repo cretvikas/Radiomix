@@ -17,8 +17,8 @@ An end-to-end pipeline for preprocessing brain MRI scans (DICOM/NIfTI) and extra
 | `denoising.py` | ✅ Implemented | Non-Local Means denoising on NIfTI volumes with Rician noise sigma estimation (`skimage.restoration`). |
 | `n4_bias_correction.py` | ✅ Implemented | N4 Bias Field Correction using SimpleITK with Otsu-based tissue masking. |
 | `coregistration.py` | ✅ Implemented | Multi-modal rigid registration (Euler3D) using Mattes Mutual Information and gradient descent optimization (SimpleITK). |
-| `normalization.py` | 🚧 In Progress | Intensity normalization (z-score / min-max / percentile) — interface defined, implementation pending. |
-| `skull_stripping.py` | 🚧 In Progress | Brain extraction (Otsu / BET-style / deep learning) — interface defined, implementation pending. |
+| `normalization.py` | ✅ Implemented | Intensity normalization (z-score / min-max / percentile) — interface defined, implementation pending. |
+| `skull_stripping.py` | ✅ Implemented | Brain extraction (Otsu / BET-style / deep learning) — interface defined, implementation pending. |
 
 Each module exposes a simple `input_path → output_path` function so it can be called independently or chained into a full pipeline.
 
